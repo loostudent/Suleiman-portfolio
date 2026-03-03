@@ -3,93 +3,150 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Software Developer Profile</title>
+    <meta name="description" content="Portfolio of Suleiman Darwish – Software Engineer with skills in JavaScript, Java, Python, C# and more.">
+    <title>Suleiman Darwish | Portfolio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
+    <!-- ===== HEADER ===== -->
     <header>
-        <div class="profile-header">
-            <img class="profile-image" src="images/user.jpg" alt="Profile Picture">
+        <div class="profile-header reveal">
+            <img class="profile-image" src="images/user.jpg" alt="Profile picture of Suleiman Darwish">
             <h1>Suleiman Darwish</h1>
-            <p>Software Engineer</p>
+            <p class="tagline">Software Engineer</p>
+            <p class="subtitle">Building clean, user-focused web experiences.</p>
         </div>
     </header>
 
-    <nav>
+    <!-- ===== NAVIGATION ===== -->
+    <nav id="main-nav">
         <ul>
-            <li> <a href="index.html">Business Card</a></li>
-            <li><a href="#about">About</a></li>
-            <li><a href="#skills">Skills</a></li>
-            <li><a href="#portfolio">Portfolio</a></li>
-            <li><a href="#contact">Contact</a></li>
+            <li><a href="index.html"><i class="fa-solid fa-id-card"></i> Business Card</a></li>
+            <li><a href="#about"><i class="fa-solid fa-user"></i> About</a></li>
+            <li><a href="#skills"><i class="fa-solid fa-code"></i> Skills</a></li>
+            <li><a href="#portfolio"><i class="fa-solid fa-briefcase"></i> Portfolio</a></li>
+            <li><a href="#contact"><i class="fa-solid fa-envelope"></i> Contact</a></li>
         </ul>
     </nav>
 
-    <section id="about">
-        <h2>About Me</h2>
-        <p>I am Suleiman Darwish studied Applied Computing at ATU college and graduated in 2025. 
-            Some languages and technologies i have learned are: java, javascript, html, css, Node.js, jQuery and more.</p>
+    <!-- ===== ABOUT ===== -->
+    <section id="about" class="reveal">
+        <h2><i class="fa-solid fa-user section-icon"></i> About Me</h2>
+        <div class="about-content">
+            <p>
+                I'm Suleiman Darwish, a recent <strong>Applied Computing</strong> graduate from ATU (2025).
+                I love turning ideas into real, working software &mdash; whether that's a responsive storefront,
+                an interactive dashboard, or a polished mobile app.
+            </p>
+            <p>
+                My toolkit spans front-end and back-end technologies including JavaScript, Java, Python, C#&nbsp;/.NET,
+                and modern frameworks. I'm a quick learner who thrives in collaborative environments and I'm
+                currently looking for my next opportunity to grow as an engineer.
+            </p>
+        </div>
     </section>
 
-    <section id="skills">
-        <h2>Skills</h2>
-        <ul>
-            <li>JavaScript</li>
-            <li>HTML</li>
-            <li>CSS</li>
-            <li>Java</li>
-            <li>Data Analytics</li>
-            <li>C# .NET Maui</li>
-            <li>jQuery</li>
-            <li>ASPNET</li>
-            <li>Networking</li>
-            <li>Python</li>
-            <li>etc...</li>
-        </ul>
+    <!-- ===== SKILLS ===== -->
+    <section id="skills" class="reveal">
+        <h2><i class="fa-solid fa-code section-icon"></i> Skills</h2>
+        <div class="skills-grid">
+            <span class="skill-tag"><i class="fa-brands fa-js"></i> JavaScript</span>
+            <span class="skill-tag"><i class="fa-brands fa-html5"></i> HTML5</span>
+            <span class="skill-tag"><i class="fa-brands fa-css3-alt"></i> CSS3</span>
+            <span class="skill-tag"><i class="fa-brands fa-java"></i> Java</span>
+            <span class="skill-tag"><i class="fa-brands fa-python"></i> Python</span>
+            <span class="skill-tag"><i class="fa-brands fa-microsoft"></i> C# / .NET MAUI</span>
+            <span class="skill-tag"><i class="fa-brands fa-node-js"></i> Node.js</span>
+            <span class="skill-tag"><i class="fa-solid fa-database"></i> SQL</span>
+            <span class="skill-tag"><i class="fa-solid fa-chart-line"></i> Data Analytics</span>
+            <span class="skill-tag"><i class="fa-brands fa-microsoft"></i> ASP.NET</span>
+            <span class="skill-tag"><i class="fa-solid fa-network-wired"></i> Networking</span>
+            <span class="skill-tag"><i class="fa-brands fa-git-alt"></i> Git</span>
+        </div>
     </section>
 
-    <section id="portfolio">
-        <h2>Portfolio</h2>
+    <!-- ===== PORTFOLIO ===== -->
+    <section id="portfolio" class="reveal">
+        <h2><i class="fa-solid fa-briefcase section-icon"></i> Portfolio</h2>
         <div class="project-grid">
+
+            <!-- Project 1 -->
             <div class="project-card">
-                <img src="images/kid-image-store.avif" alt="Project 1">
-                <h3>Kids Online Clothes Shop</h3>
-<p>Built a responsive e-commerce web application for children's clothing using HTML, CSS, and JavaScript.
-Key features include:
-
-Users can browse a variety of clothing items categorized by type.
-
-A dedicated admin panel allows product management: add, update, remove, and edit product details.
-
-Clean and intuitive UI to enhance user experience.
-                </p>
+                <div class="project-img-wrapper">
+                    <img src="images/kid-image-store.avif" alt="Kids Online Clothes Shop screenshot">
+                </div>
+                <div class="project-body">
+                    <h3>Kids Online Clothes Shop</h3>
+                    <p>
+                        A responsive e-commerce web application for children's clothing.
+                        Users can browse items by category while an admin panel provides full product
+                        management &mdash; add, update, and remove listings with ease.
+                    </p>
+                    <div class="project-tags">
+                        <span>HTML</span><span>CSS</span><span>JavaScript</span>
+                    </div>
+                </div>
             </div>
+
+            <!-- Project 2 -->
             <div class="project-card">
-                <img src="images/furniture-image.avif" alt="Project 2">
-                <h3>Furniture Gallery</h3>
-                <p>Developed a dynamic and user-friendly furniture gallery website using HTML, CSS, and JavaScript.
-Key features include:
+                <div class="project-img-wrapper">
+                    <img src="images/furniture-image.avif" alt="Furniture Gallery screenshot">
+                </div>
+                <div class="project-body">
+                    <h3>Furniture Gallery</h3>
+                    <p>
+                        A dynamic furniture gallery website where visitors can browse items displayed
+                        with images and descriptions. Includes a complete admin panel for managing
+                        listings &mdash; add, edit, and delete furniture products.
+                    </p>
+                    <div class="project-tags">
+                        <span>HTML</span><span>CSS</span><span>JavaScript</span>
+                    </div>
+                </div>
+            </div>
 
-Visitors can browse various furniture items displayed with images and descriptions.
+        </div>
+    </section>
 
-Admin panel allows full product management: add, edit, delete, 
-and update furniture listings.
-
-Designed with a focus on clean layout and ease of navigation.</p>
+    <!-- ===== CONTACT ===== -->
+    <section id="contact" class="reveal">
+        <h2><i class="fa-solid fa-envelope section-icon"></i> Contact</h2>
+        <div class="contact-grid">
+            <div class="contact-card">
+                <i class="fa-solid fa-envelope"></i>
+                <h4>Email</h4>
+                <a href="mailto:suleimandeveloper123@gmail.com">suleimandeveloper123@gmail.com</a>
+            </div>
+            <div class="contact-card">
+                <i class="fa-solid fa-phone"></i>
+                <h4>Phone</h4>
+                <span>083 887 3677</span>
+            </div>
+            <div class="contact-card">
+                <i class="fa-solid fa-location-dot"></i>
+                <h4>Location</h4>
+                <span>Donegal, Ireland</span>
             </div>
         </div>
     </section>
 
-    <section id="contact">
-        <h2>Contact</h2>
-        <p>Email: <a href="mailto:suleimandeveloper123@gmail.com">suleimandeveloper123@gmail.com</a></p>
-        <p>Phone: 083 887 3677</p>
-        <p>Address: Ireland Donegal</p>
-    </section>
-
+    <!-- ===== FOOTER ===== -->
     <footer>
-        <p>&copy; 2025 Suleiman Darwish</p>
+        <div class="footer-links">
+            <a href="https://github.com/" target="_blank" aria-label="GitHub"><i class="fa-brands fa-github"></i></a>
+            <a href="https://www.linkedin.com/feed/" target="_blank" aria-label="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a>
+            <a href="#" target="_blank" aria-label="Twitter"><i class="fa-brands fa-x-twitter"></i></a>
+        </div>
+        <p>&copy; 2025 Suleiman Darwish. All rights reserved.</p>
     </footer>
+
+    <!-- Scroll-to-top -->
+    <button id="scroll-top" aria-label="Scroll to top"><i class="fa-solid fa-chevron-up"></i></button>
 
     <script src="script.js"></script>
 </body>

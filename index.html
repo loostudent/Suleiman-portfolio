@@ -3,40 +3,56 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Business Card - Suleiman Darwish</title>
+    <meta name="description" content="Suleiman Darwish – Software Engineer specialising in web development. View my portfolio, skills, and contact details.">
+    <title>Suleiman Darwish | Software Engineer</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <div class="business-card">
+    <div class="business-card fade-in">
+        <!-- Decorative accent -->
+        <div class="card-accent"></div>
+
         <div class="card-header">
-            <img class="profile-image" src="images/user.jpg" alt="Profile Picture"/>
+            <img class="profile-image" src="images/user.jpg" alt="Profile picture of Suleiman Darwish"/>
             <h1 class="full-name">Suleiman Darwish</h1>
             <p class="designation">Software Engineer</p>
-            <p class="company">Looking for a job</p>
+            <p class="company">Open to Opportunities</p>
         </div>
-        
+
         <div class="card-contact">
             <div class="contact-item">
-                <span class="label">Email:</span>
+                <i class="fa-solid fa-envelope"></i>
                 <a href="mailto:suleimandeveloper123@gmail.com" class="email">suleimandeveloper123@gmail.com</a>
             </div>
             <div class="contact-item">
-                <span class="label">Phone:</span>
+                <i class="fa-solid fa-phone"></i>
                 <span>083 887 3677</span>
             </div>
             <div class="contact-item">
-                <a href="Profile.html" class="portfolio-link">View Portfolio</a>
+                <i class="fa-solid fa-location-dot"></i>
+                <span>Donegal, Ireland</span>
+            </div>
+            <div class="contact-item cta">
+                <a href="Profile.html" class="portfolio-link">
+                    <i class="fa-solid fa-arrow-right"></i> View Portfolio
+                </a>
             </div>
         </div>
-        
+
         <div class="social-media">
             <h3>Connect with me</h3>
             <div class="social-links">
-                <a href="#" target="_blank">Twitter</a>
-                <a href="https://www.linkedin.com/feed/" target="_blank">LinkedIn</a>
-                <a href="https://github.com/" target="_blank">GitHub</a>
+                <a href="#" target="_blank" aria-label="Twitter"><i class="fa-brands fa-x-twitter"></i> Twitter</a>
+                <a href="https://www.linkedin.com/feed/" target="_blank" aria-label="LinkedIn"><i class="fa-brands fa-linkedin-in"></i> LinkedIn</a>
+                <a href="https://github.com/" target="_blank" aria-label="GitHub"><i class="fa-brands fa-github"></i> GitHub</a>
             </div>
         </div>
     </div>
+
+    <script src="script.js"></script>
 </body>
 </html>
